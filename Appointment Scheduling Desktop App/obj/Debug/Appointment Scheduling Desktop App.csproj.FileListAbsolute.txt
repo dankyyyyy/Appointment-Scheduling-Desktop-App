@@ -1,0 +1,16 @@
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\bin\Debug\Appointment Scheduling Desktop App.exe.config
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\bin\Debug\Appointment Scheduling Desktop App.exe
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\bin\Debug\Appointment Scheduling Desktop App.pdb
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment Scheduling Desktop App.csproj.AssemblyReference.cache
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment Scheduling Desktop App.csproj.SuggestedBindingRedirects.cache
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Appointments_Screen.resources
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Home_Screen.resources
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Login_Screen.resources
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Properties.Resources.resources
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Services_Screen.resources
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment Scheduling Desktop App.csproj.GenerateResource.cache
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment Scheduling Desktop App.csproj.CoreCompileInputs.cache
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment Scheduling Desktop App.exe
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment Scheduling Desktop App.pdb
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Employees_Screen.resources
+C:\Users\alexm\source\repos\Appointment Scheduling Desktop App Solution\Appointment Scheduling Desktop App\obj\Debug\Appointment_Scheduling_Desktop_App.Customers.resources
