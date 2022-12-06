@@ -1,0 +1,12 @@
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\bin\Debug\net6.0\AppointmentSchedulerUILibrary.deps.json
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\bin\Debug\net6.0\AppointmentSchedulerUILibrary.dll
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\bin\Debug\net6.0\AppointmentSchedulerUILibrary.pdb
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.csproj.AssemblyReference.cache
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.AssemblyInfoInputs.cache
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.AssemblyInfo.cs
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.csproj.CoreCompileInputs.cache
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.dll
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\refint\AppointmentSchedulerUILibrary.dll
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\AppointmentSchedulerUILibrary.pdb
+C:\Users\alexm\Documents\GitHub\AppointmentSchedulerUISolution\AppointmentSchedulerUILibrary\obj\Debug\net6.0\ref\AppointmentSchedulerUILibrary.dll

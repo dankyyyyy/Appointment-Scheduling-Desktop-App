@@ -1,0 +1,141 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulingDesktopClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulingDesktopClient.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerUISolution\\AppointmentSchedulerUILibrary\\AppointmentSchedulerClientLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerUISolution\\AppointmentSchedulerUILibrary\\AppointmentSchedulerClientLibrary.csproj",
+        "projectName": "AppointmentSchedulerClientLibrary",
+        "projectPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerUISolution\\AppointmentSchedulerUILibrary\\AppointmentSchedulerClientLibrary.csproj",
+        "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerUISolution\\AppointmentSchedulerUILibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulingDesktopClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulingDesktopClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulingDesktopClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulingDesktopClient.csproj",
+        "projectName": "AppointmentSchedulingDesktopClient",
+        "projectPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulingDesktopClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulingDesktopClient.csproj",
+        "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulingDesktopClientSolution\\AppointmentSchedulingDesktopClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerUISolution\\AppointmentSchedulerUILibrary\\AppointmentSchedulerClientLibrary.csproj": {
+                "projectPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerUISolution\\AppointmentSchedulerUILibrary\\AppointmentSchedulerClientLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
