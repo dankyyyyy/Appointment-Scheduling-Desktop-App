@@ -29,9 +29,10 @@ namespace Appointment_Scheduling_Desktop_App
             dataAccess = new AppointmentService("https://localhost:7052/api/v1/Appointment");
         }
 
-        private void Appointment_Screen_Load(object sender, EventArgs e)
+        private async Task Appointment_Screen_Load(object sender, EventArgs e)
         {
-            //UpdateAppointmentsGrid();
+            await LoadData();
+            UpdateUi();
         }
 
 
@@ -63,16 +64,22 @@ namespace Appointment_Scheduling_Desktop_App
             Customers CustomersScreen = new Customers();
             CustomersScreen.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
         #endregion
 
         #region Functionality
 
-        private void LoadData()
+        private async Task LoadData()
         {
             try
             {
                 lstAppointments.Items.Clear();
-                foreach(var appointment in dataAccess.GetAppointmentsByAccountId(16))
+                var appointmentList = await dataAccess.GetAppointmentsByAccountId(16);
+                foreach(var appointment in appointmentList)
                 {
                     lstAppointments.Items.Add(appointment);
                 }

@@ -3599,11 +3599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulerClient.csproj",
+      "projectUniqueName": "C:\\Users\\alexm\\Documents\\GitHub\\Appointment-Scheduling-Desktop-App\\AppointmentSchedulingDesktopClient\\AppointmentSchedulerClient.csproj",
       "projectName": "AppointmentSchedulerClient",
-      "projectPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulerClient.csproj",
+      "projectPath": "C:\\Users\\alexm\\Documents\\GitHub\\Appointment-Scheduling-Desktop-App\\AppointmentSchedulingDesktopClient\\AppointmentSchedulerClient.csproj",
       "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerClientSolution\\AppointmentSchedulingDesktopClient\\obj\\",
+      "outputPath": "C:\\Users\\alexm\\Documents\\GitHub\\Appointment-Scheduling-Desktop-App\\AppointmentSchedulingDesktopClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

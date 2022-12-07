@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fJp+HJB1gLa+esRKNPK/VJT+rdWgGeUi9K1lv/6ebgggUSD7ULCTf3SA5EebEyK2XeSHQlvSJe+12VbYCoFroA==",
+  "dgSpecHash": "04eM221VpwQhunxcxR3djYjrI0vQ26BUNl73dhhOmkNFZI8r7Dps+q7BcJ6j6UBp7NZGyzDbqroCHzthU7hOcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexm\\Documents\\GitHub\\AppointmentSchedulerClientSolution\\AppointmentSchedulingDesktopClient\\AppointmentSchedulerClient.csproj",
+  "projectFilePath": "C:\\Users\\alexm\\Documents\\GitHub\\Appointment-Scheduling-Desktop-App\\AppointmentSchedulingDesktopClient\\AppointmentSchedulerClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\alexm\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
