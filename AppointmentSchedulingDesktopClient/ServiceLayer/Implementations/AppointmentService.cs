@@ -6,7 +6,6 @@ using Newtonsoft.Json;
 using RestSharp;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using Microsoft.AspNetCore.Http;
-using AppointmentSchedulerServer.DataTransferObjects;
 
 namespace AppointmentSchedulerUI.DAL.Implementations
 {

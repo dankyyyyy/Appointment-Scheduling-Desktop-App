@@ -43,10 +43,6 @@ namespace Appointment_Scheduling_Desktop_App
             CustomersScreen.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            LoadData();
-        }
         #endregion
 
         #region Functionality

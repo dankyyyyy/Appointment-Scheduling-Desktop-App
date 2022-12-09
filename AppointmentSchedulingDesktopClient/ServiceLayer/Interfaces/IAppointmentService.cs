@@ -1,8 +1,5 @@
-﻿using AppointmentSchedulerServer.DataTransferObjects;
-using AppointmentSchedulerUILibrary.AppointmentDTOs;
+﻿using AppointmentSchedulerUILibrary.AppointmentDTOs;
 using AppointmentSchedulerUILibrary.DataTransferObjects;
-using Microsoft.AspNetCore.Mvc;
-using RestSharp;
 
 namespace AppointmentSchedulerUI.Repositories.Interfaces
 {
