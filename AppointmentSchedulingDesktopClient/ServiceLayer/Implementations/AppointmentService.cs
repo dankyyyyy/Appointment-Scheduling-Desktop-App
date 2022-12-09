@@ -2,38 +2,16 @@
 using AppointmentSchedulerUI.Views;
 using AppointmentSchedulerUILibrary.AppointmentDTOs;
 using AppointmentSchedulerUILibrary.DataTransferObjects;
-using Microsoft.AspNetCore.Mvc;
-using AppointmentSchedulerUI.Exceptions;
 using Newtonsoft.Json;
 using RestSharp;
-using System.Linq;
-using System.Net;
-using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
-using System.Net.NetworkInformation;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
 using Microsoft.AspNetCore.Http;
+using AppointmentSchedulerServer.DataTransferObjects;
 
-namespace AppointmentSchedulerUI.Repositories.Implementations
+namespace AppointmentSchedulerUI.DAL.Implementations
 {
     public class AppointmentService : IAppointmentService
     {
-
-        public string BaseUri { get; private set; }
-
-        private RestClient AppointmentRest { get; set; }
-
-        public AppointmentService(string baseUri)
-        {
-            BaseUri = baseUri;
-            AppointmentRest = new RestClient(baseUri);
-        }
-
         public Task Delete(DeleteAppointmentDTO entity)
         {
             throw new NotImplementedException();
@@ -129,7 +107,7 @@ namespace AppointmentSchedulerUI.Repositories.Implementations
         public async Task<IEnumerable<GetAppointmentDTO>> GetAppointmentsByAccountId(long id)
         {
             HttpContextAccessor httpContextAccessor = new HttpContextAccessor();
-            string role = "Admin";
+            string role = "employee";
 
             //IF ITS EMPLOYEE ACCOUNT THEN YOU WILL GET IT BY EMPLOYEEID
             //if (httpContextAccessor.HttpContext.User.IsInRole("Employee") || httpContextAccessor.HttpContext.User.IsInRole("Admin"))
@@ -138,7 +116,7 @@ namespace AppointmentSchedulerUI.Repositories.Implementations
             //}
 
             using var client = new RestClient(ServerUrl.AppointmentUrl + $"/{role}/{id}");
-            var request = new RestRequest(id.ToString());
+            var request = new RestRequest("", Method.Get);
 
             var response = await client.ExecuteAsync<GetAppointmentDTO>(request);
 

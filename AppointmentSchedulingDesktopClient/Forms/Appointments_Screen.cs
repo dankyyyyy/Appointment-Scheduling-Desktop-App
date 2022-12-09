@@ -1,40 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using AppointmentSchedulerUILibrary.AppointmentDTOs;
-using Newtonsoft.Json;
-using RestSharp;
-using Microsoft.AspNetCore.Http;
-using AppointmentSchedulerUI.Views;
-using AppointmentSchedulerUI.Repositories.Implementations;
+﻿using AppointmentSchedulerUI.DAL.Implementations;
 using AppointmentSchedulerUI.Repositories.Interfaces;
 
 namespace Appointment_Scheduling_Desktop_App
 {
     public partial class Appointments_Screen : Form
     {
-        private IAppointmentService dataAccess;
-        
+        private IAppointmentService _appointmentService;
+
         public Appointments_Screen()
         {
             InitializeComponent();
-            dataAccess = new AppointmentService("https://localhost:7052/api/v1/Appointment");
+            _appointmentService = new AppointmentService();
+            LoadData();
         }
-
-        private async Task Appointment_Screen_Load(object sender, EventArgs e)
-        {
-            await LoadData();
-            UpdateUi();
-        }
-
 
         #region Eventhandlers
         private void Home_Button_Click(object sender, EventArgs e)
@@ -78,8 +56,8 @@ namespace Appointment_Scheduling_Desktop_App
             try
             {
                 lstAppointments.Items.Clear();
-                var appointmentList = await dataAccess.GetAppointmentsByAccountId(16);
-                foreach(var appointment in appointmentList)
+                var appointmentList = await _appointmentService.GetAppointmentsByAccountId(9);
+                foreach (var appointment in appointmentList)
                 {
                     lstAppointments.Items.Add(appointment);
                 }

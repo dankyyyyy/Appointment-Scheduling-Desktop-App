@@ -1,5 +1,4 @@
-﻿using AppointmentSchedulerUILibrary;
-using AppointmentSchedulerUILibrary.Credentials;
+﻿using AppointmentSchedulerUILibrary.DataTransferObjects;
 using RestSharp;
 
 namespace AppointmentSchedulerUI.Repositories.Interfaces

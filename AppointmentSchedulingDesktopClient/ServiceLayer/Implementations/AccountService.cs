@@ -1,17 +1,13 @@
-﻿using AppointmentSchedulerUI.Exceptions;
-using AppointmentSchedulerUI.Repositories.Interfaces;
+﻿using AppointmentSchedulerUI.Repositories.Interfaces;
 using AppointmentSchedulerUI.Views;
-using AppointmentSchedulerUILibrary;
-using AppointmentSchedulerUILibrary.Credentials;
-using Microsoft.AspNetCore.Authorization;
+using AppointmentSchedulerUILibrary.DataTransferObjects;
+using AppointmentSchedulerUILibrary.ErrorMessages;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using RestSharp;
-using System.Security.Claims;
 using System.Text.Json;
-using System.Web.Mvc;
 using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
-using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
+using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
+using ValidateAntiForgeryTokenAttribute = System.Web.Mvc.ValidateAntiForgeryTokenAttribute;
 
 namespace AppointmentSchedulerUI.Repositories.Implementations
 {

@@ -1,4 +1,5 @@
-﻿using AppointmentSchedulerUILibrary.AppointmentDTOs;
+﻿using AppointmentSchedulerServer.DataTransferObjects;
+using AppointmentSchedulerUILibrary.AppointmentDTOs;
 using AppointmentSchedulerUILibrary.DataTransferObjects;
 using Microsoft.AspNetCore.Mvc;
 using RestSharp;
@@ -10,5 +11,6 @@ namespace AppointmentSchedulerUI.Repositories.Interfaces
         public Task<IEnumerable<EmployeeDTO>> GetAllEmployeesAndAvailableTimeSlots(DateTime date);
 
         public Task<IEnumerable<GetAppointmentDTO>> GetAppointmentsByAccountId(long accountId);
+
     }
 }
