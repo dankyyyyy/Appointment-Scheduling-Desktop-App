@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppointmentSchedulerUI.Repositories.Implementations;
+using AppointmentSchedulerUI.Repositories.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +14,16 @@ namespace Appointment_Scheduling_Desktop_App
 {
     public partial class Employees_Screen : Form
     {
+        private IAccountService _accountService;
+
         public Employees_Screen()
         {
             InitializeComponent();
+            _accountService = new AccountService();
+            LoadData();
         }
 
+        #region Eventhandlers
         private void Home_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,5 +51,28 @@ namespace Appointment_Scheduling_Desktop_App
             Customers CustomersScreen = new Customers();
             CustomersScreen.Show();
         }
+        #endregion
+
+        #region Functionality
+
+        private async Task LoadData()
+        {
+            try
+            {
+                lstEmployees.Items.Clear();
+                var employeeList = await _accountService.GetAllEmployees();
+                foreach(var employee in employeeList)
+                {
+                    lstEmployees.Items.Add(employee);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error retrieving data from the database. Error is: '{ex.Message}'", "Communication error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (lstEmployees.Items.Count > 0) { lstEmployees.SelectedIndex = 0; }
+        }
+
+        #endregion
     }
 }

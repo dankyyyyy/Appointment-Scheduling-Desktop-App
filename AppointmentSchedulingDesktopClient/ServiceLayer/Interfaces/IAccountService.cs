@@ -9,5 +9,6 @@ namespace AppointmentSchedulerUI.Repositories.Interfaces
     {
         public Task<AccountDetails> Authenticate(LoginCredential credential);
         public Task<RestResponse> SaveEmployee(EmployeeSignupCredential credential);
+        public Task<IEnumerable<GetEmployeeDTO>> GetAllEmployees();
     }
 }

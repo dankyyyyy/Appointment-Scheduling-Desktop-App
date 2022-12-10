@@ -35,10 +35,10 @@
             this.Appointments_Button = new System.Windows.Forms.ToolStripButton();
             this.Services_Button = new System.Windows.Forms.ToolStripButton();
             this.Customers_Button = new System.Windows.Forms.ToolStripButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Create_Employee_Button = new System.Windows.Forms.Button();
             this.Update_Employee_Button = new System.Windows.Forms.Button();
             this.Delete_Employee_Button = new System.Windows.Forms.Button();
+            this.lstEmployees = new System.Windows.Forms.ListBox();
             this.Page_Strip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,14 +53,14 @@
             this.Customers_Button});
             this.Page_Strip.Location = new System.Drawing.Point(0, 0);
             this.Page_Strip.Name = "Page_Strip";
-            this.Page_Strip.Size = new System.Drawing.Size(97, 450);
+            this.Page_Strip.Size = new System.Drawing.Size(97, 519);
             this.Page_Strip.TabIndex = 4;
             this.Page_Strip.Text = "Page_Strip";
             // 
             // Home_Button
             // 
             this.Home_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Home_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Home_Button.Image = ((System.Drawing.Image)(resources.GetObject("Home_Button.Image")));
             this.Home_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Home_Button.Name = "Home_Button";
@@ -71,7 +71,7 @@
             // Employees_Button
             // 
             this.Employees_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Employees_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Employees_Button.Image = ((System.Drawing.Image)(resources.GetObject("Employees_Button.Image")));
             this.Employees_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Employees_Button.Name = "Employees_Button";
@@ -81,7 +81,7 @@
             // Appointments_Button
             // 
             this.Appointments_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Appointments_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Appointments_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Appointments_Button.Image = ((System.Drawing.Image)(resources.GetObject("Appointments_Button.Image")));
             this.Appointments_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Appointments_Button.Name = "Appointments_Button";
@@ -92,7 +92,7 @@
             // Services_Button
             // 
             this.Services_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Services_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Services_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Services_Button.Image = ((System.Drawing.Image)(resources.GetObject("Services_Button.Image")));
             this.Services_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Services_Button.Name = "Services_Button";
@@ -103,7 +103,7 @@
             // Customers_Button
             // 
             this.Customers_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Customers_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Customers_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
             this.Customers_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Customers_Button.Name = "Customers_Button";
@@ -111,23 +111,15 @@
             this.Customers_Button.Text = "Customers";
             this.Customers_Button.Click += new System.EventHandler(this.Customers_Button_Click);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(100, 59);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(688, 379);
-            this.flowLayoutPanel1.TabIndex = 5;
-            // 
             // Create_Employee_Button
             // 
             this.Create_Employee_Button.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.Create_Employee_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Create_Employee_Button.Location = new System.Drawing.Point(100, 4);
+            this.Create_Employee_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Create_Employee_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Create_Employee_Button.Location = new System.Drawing.Point(853, 0);
+            this.Create_Employee_Button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Create_Employee_Button.Name = "Create_Employee_Button";
-            this.Create_Employee_Button.Size = new System.Drawing.Size(124, 49);
+            this.Create_Employee_Button.Size = new System.Drawing.Size(80, 519);
             this.Create_Employee_Button.TabIndex = 6;
             this.Create_Employee_Button.Text = "Create employee";
             this.Create_Employee_Button.UseVisualStyleBackColor = false;
@@ -135,10 +127,12 @@
             // Update_Employee_Button
             // 
             this.Update_Employee_Button.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.Update_Employee_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update_Employee_Button.Location = new System.Drawing.Point(385, 8);
+            this.Update_Employee_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Update_Employee_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Update_Employee_Button.Location = new System.Drawing.Point(773, 0);
+            this.Update_Employee_Button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Update_Employee_Button.Name = "Update_Employee_Button";
-            this.Update_Employee_Button.Size = new System.Drawing.Size(112, 41);
+            this.Update_Employee_Button.Size = new System.Drawing.Size(80, 519);
             this.Update_Employee_Button.TabIndex = 7;
             this.Update_Employee_Button.Text = "Update employee";
             this.Update_Employee_Button.UseVisualStyleBackColor = false;
@@ -146,24 +140,37 @@
             // Delete_Employee_Button
             // 
             this.Delete_Employee_Button.BackColor = System.Drawing.Color.IndianRed;
-            this.Delete_Employee_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete_Employee_Button.Location = new System.Drawing.Point(725, 14);
+            this.Delete_Employee_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Delete_Employee_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Delete_Employee_Button.Location = new System.Drawing.Point(717, 0);
+            this.Delete_Employee_Button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Delete_Employee_Button.Name = "Delete_Employee_Button";
-            this.Delete_Employee_Button.Size = new System.Drawing.Size(63, 31);
+            this.Delete_Employee_Button.Size = new System.Drawing.Size(56, 519);
             this.Delete_Employee_Button.TabIndex = 9;
             this.Delete_Employee_Button.Text = "Delete";
             this.Delete_Employee_Button.UseVisualStyleBackColor = false;
             // 
+            // lstEmployees
+            // 
+            this.lstEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstEmployees.FormattingEnabled = true;
+            this.lstEmployees.ItemHeight = 15;
+            this.lstEmployees.Location = new System.Drawing.Point(97, 0);
+            this.lstEmployees.Name = "lstEmployees";
+            this.lstEmployees.Size = new System.Drawing.Size(620, 519);
+            this.lstEmployees.TabIndex = 10;
+            // 
             // Employees_Screen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.lstEmployees);
             this.Controls.Add(this.Delete_Employee_Button);
             this.Controls.Add(this.Update_Employee_Button);
             this.Controls.Add(this.Create_Employee_Button);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.Page_Strip);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Employees_Screen";
             this.Text = "Employees";
             this.Page_Strip.ResumeLayout(false);
@@ -181,9 +188,9 @@
         private System.Windows.Forms.ToolStripButton Appointments_Button;
         private System.Windows.Forms.ToolStripButton Services_Button;
         private System.Windows.Forms.ToolStripButton Customers_Button;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button Create_Employee_Button;
         private System.Windows.Forms.Button Update_Employee_Button;
         private System.Windows.Forms.Button Delete_Employee_Button;
+        private ListBox lstEmployees;
     }
 }

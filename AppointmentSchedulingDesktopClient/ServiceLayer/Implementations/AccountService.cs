@@ -1,29 +1,19 @@
 ﻿using AppointmentSchedulerUI.Repositories.Interfaces;
 using AppointmentSchedulerUI.Views;
+using AppointmentSchedulerUILibrary.AppointmentDTOs;
 using AppointmentSchedulerUILibrary.DataTransferObjects;
-using AppointmentSchedulerUILibrary.ErrorMessages;
-using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 using RestSharp;
+using JsonSerializer = System.Text.Json.JsonSerializer;
+using Microsoft.AspNetCore.Http;
+using System.Web.Mvc;
+using AppointmentSchedulerUILibrary.ErrorMessages;
 using System.Text.Json;
-using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
-using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
-using ValidateAntiForgeryTokenAttribute = System.Web.Mvc.ValidateAntiForgeryTokenAttribute;
 
 namespace AppointmentSchedulerUI.Repositories.Implementations
 {
     public class AccountService : IAccountService
     {
-        public string BaseUri { get; private set; }
-
-        private RestClient AccountRest { get; set; }
-
-        public AccountService(string baseUri)
-        {
-            BaseUri = baseUri;
-            AccountRest = new RestClient(baseUri);
-        }
-
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<RestResponse> Save(SignupCredential credentials)
@@ -146,6 +136,21 @@ namespace AppointmentSchedulerUI.Repositories.Implementations
         public Task<int> SaveAll(IEnumerable<SignupCredential> entities)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<GetEmployeeDTO>> GetAllEmployees()
+        {
+            HttpContextAccessor httpContextAccessor = new();
+            string role = "employee";
+
+            using var client = new RestClient(ServerUrl.EmployoeeUrl);
+            var request = new RestRequest("", Method.Get);
+
+            var response = await client.ExecuteAsync<GetEmployeeDTO>(request);
+
+            var employeeList = JsonConvert.DeserializeObject<IEnumerable<GetEmployeeDTO>>(response.Content);
+
+            return employeeList;
         }
     }
 }

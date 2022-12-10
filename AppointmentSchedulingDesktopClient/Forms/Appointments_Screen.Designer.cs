@@ -39,6 +39,15 @@
             this.Approve_Appointment_Button = new System.Windows.Forms.Button();
             this.Update_Appointment_Button = new System.Windows.Forms.Button();
             this.lstAppointments = new System.Windows.Forms.ListBox();
+            this.DataSplitter = new System.Windows.Forms.Splitter();
+            this.TypeLabel = new System.Windows.Forms.Label();
+            this.DescriptionLabel = new System.Windows.Forms.Label();
+            this.EmployeeLabel = new System.Windows.Forms.Label();
+            this.CustomerLabel = new System.Windows.Forms.Label();
+            this.DateLabel = new System.Windows.Forms.Label();
+            this.TimeSlotLabel = new System.Windows.Forms.Label();
+            this.IsApprovedCheckbox = new System.Windows.Forms.CheckBox();
+            this.RoomLabel = new System.Windows.Forms.Label();
             this.Page_Strip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,10 +151,10 @@
             this.Update_Appointment_Button.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Update_Appointment_Button.Dock = System.Windows.Forms.DockStyle.Right;
             this.Update_Appointment_Button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Update_Appointment_Button.Location = new System.Drawing.Point(667, 0);
+            this.Update_Appointment_Button.Location = new System.Drawing.Point(662, 0);
             this.Update_Appointment_Button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Update_Appointment_Button.Name = "Update_Appointment_Button";
-            this.Update_Appointment_Button.Size = new System.Drawing.Size(91, 519);
+            this.Update_Appointment_Button.Size = new System.Drawing.Size(96, 519);
             this.Update_Appointment_Button.TabIndex = 13;
             this.Update_Appointment_Button.Text = "Update appointment";
             this.Update_Appointment_Button.UseVisualStyleBackColor = false;
@@ -157,14 +166,106 @@
             this.lstAppointments.ItemHeight = 15;
             this.lstAppointments.Location = new System.Drawing.Point(97, 0);
             this.lstAppointments.Name = "lstAppointments";
-            this.lstAppointments.Size = new System.Drawing.Size(570, 519);
+            this.lstAppointments.Size = new System.Drawing.Size(565, 519);
             this.lstAppointments.TabIndex = 14;
+            // 
+            // DataSplitter
+            // 
+            this.DataSplitter.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DataSplitter.Enabled = false;
+            this.DataSplitter.Location = new System.Drawing.Point(376, 0);
+            this.DataSplitter.Name = "DataSplitter";
+            this.DataSplitter.Size = new System.Drawing.Size(286, 519);
+            this.DataSplitter.TabIndex = 15;
+            this.DataSplitter.TabStop = false;
+            // 
+            // TypeLabel
+            // 
+            this.TypeLabel.AutoSize = true;
+            this.TypeLabel.Location = new System.Drawing.Point(385, 21);
+            this.TypeLabel.Name = "TypeLabel";
+            this.TypeLabel.Size = new System.Drawing.Size(34, 15);
+            this.TypeLabel.TabIndex = 16;
+            this.TypeLabel.Text = "Type:";
+            // 
+            // DescriptionLabel
+            // 
+            this.DescriptionLabel.AutoSize = true;
+            this.DescriptionLabel.Location = new System.Drawing.Point(385, 48);
+            this.DescriptionLabel.Name = "DescriptionLabel";
+            this.DescriptionLabel.Size = new System.Drawing.Size(70, 15);
+            this.DescriptionLabel.TabIndex = 17;
+            this.DescriptionLabel.Text = "Description:";
+            // 
+            // EmployeeLabel
+            // 
+            this.EmployeeLabel.AutoSize = true;
+            this.EmployeeLabel.Location = new System.Drawing.Point(385, 76);
+            this.EmployeeLabel.Name = "EmployeeLabel";
+            this.EmployeeLabel.Size = new System.Drawing.Size(62, 15);
+            this.EmployeeLabel.TabIndex = 18;
+            this.EmployeeLabel.Text = "Employee:";
+            // 
+            // CustomerLabel
+            // 
+            this.CustomerLabel.AutoSize = true;
+            this.CustomerLabel.Location = new System.Drawing.Point(385, 103);
+            this.CustomerLabel.Name = "CustomerLabel";
+            this.CustomerLabel.Size = new System.Drawing.Size(62, 15);
+            this.CustomerLabel.TabIndex = 19;
+            this.CustomerLabel.Text = "Customer:";
+            // 
+            // DateLabel
+            // 
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.Location = new System.Drawing.Point(385, 132);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(34, 15);
+            this.DateLabel.TabIndex = 20;
+            this.DateLabel.Text = "Date:";
+            // 
+            // TimeSlotLabel
+            // 
+            this.TimeSlotLabel.AutoSize = true;
+            this.TimeSlotLabel.Location = new System.Drawing.Point(385, 160);
+            this.TimeSlotLabel.Name = "TimeSlotLabel";
+            this.TimeSlotLabel.Size = new System.Drawing.Size(36, 15);
+            this.TimeSlotLabel.TabIndex = 21;
+            this.TimeSlotLabel.Text = "Time:";
+            // 
+            // IsApprovedCheckbox
+            // 
+            this.IsApprovedCheckbox.AutoSize = true;
+            this.IsApprovedCheckbox.Location = new System.Drawing.Point(385, 215);
+            this.IsApprovedCheckbox.Name = "IsApprovedCheckbox";
+            this.IsApprovedCheckbox.Size = new System.Drawing.Size(78, 19);
+            this.IsApprovedCheckbox.TabIndex = 22;
+            this.IsApprovedCheckbox.Text = "Approved";
+            this.IsApprovedCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // RoomLabel
+            // 
+            this.RoomLabel.AutoSize = true;
+            this.RoomLabel.Location = new System.Drawing.Point(385, 188);
+            this.RoomLabel.Name = "RoomLabel";
+            this.RoomLabel.Size = new System.Drawing.Size(42, 15);
+            this.RoomLabel.TabIndex = 23;
+            this.RoomLabel.Text = "Room:";
             // 
             // Appointments_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.RoomLabel);
+            this.Controls.Add(this.IsApprovedCheckbox);
+            this.Controls.Add(this.TimeSlotLabel);
+            this.Controls.Add(this.DateLabel);
+            this.Controls.Add(this.CustomerLabel);
+            this.Controls.Add(this.EmployeeLabel);
+            this.Controls.Add(this.DescriptionLabel);
+            this.Controls.Add(this.TypeLabel);
+            this.Controls.Add(this.DataSplitter);
             this.Controls.Add(this.lstAppointments);
             this.Controls.Add(this.Update_Appointment_Button);
             this.Controls.Add(this.Delete_Appointment_Button);
@@ -193,5 +294,14 @@
         private System.Windows.Forms.Button Update_Appointment_Button;
         private ListBox lstAppointments;
         private Button button1;
+        private Splitter DataSplitter;
+        private Label TypeLabel;
+        private Label DescriptionLabel;
+        private Label EmployeeLabel;
+        private Label CustomerLabel;
+        private Label DateLabel;
+        private Label TimeSlotLabel;
+        private CheckBox IsApprovedCheckbox;
+        private Label RoomLabel;
     }
 }

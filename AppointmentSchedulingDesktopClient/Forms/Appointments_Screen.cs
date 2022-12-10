@@ -61,7 +61,7 @@ namespace Appointment_Scheduling_Desktop_App
 
             catch (Exception ex)
             {
-                MessageBox.Show($"Error retrieving data from the server. Error is: '{ex.Message}'", "Communication error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error retrieving data from the database. Error is: '{ex.Message}'", "Communication error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (lstAppointments.Items.Count > 0) { lstAppointments.SelectedIndex = 0; }
         }
@@ -94,34 +94,13 @@ namespace Appointment_Scheduling_Desktop_App
         {
 
         }
-        
+
         private void UpdateSelectedAppointmentOnUI()
         {
-            throw new NotImplementedException();
+            if (lstAppointments.SelectedIndex == -1) { return; }
+            AppointmentService appointmentService = (AppointmentService)lstAppointments.SelectedItem;
+            //TypeLabel.Text = appointmentService.Name;
         }
-
-
-        //private void UpdateAppointmentsGrid()
-        //{
-        //    var client = new HttpClient();
-        //    //TODO add the URI
-        //    client.BaseAddress = new Uri("https://localhost:7052/api/v1/Appointment");
-        //    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-        //    var response = client.GetAsync(client.BaseAddress + "/16").Result;
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        var data = response.Content.ReadAsStringAsync().Result;
-        //        var appointments = new List<GetAppointmentDTO>();
-        //        Newtonsoft.Json.JsonConvert.PopulateObject(data.ToString(), appointments);
-
-        //        appointmentsGrid.DataSource = appointments;
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("END ME");
-        //    }
-        //}
     }
     #endregion
 }

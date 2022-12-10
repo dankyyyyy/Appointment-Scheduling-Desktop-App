@@ -108,12 +108,6 @@ namespace AppointmentSchedulerUI.DAL.Implementations
             HttpContextAccessor httpContextAccessor = new HttpContextAccessor();
             string role = "employee";
 
-            //IF ITS EMPLOYEE ACCOUNT THEN YOU WILL GET IT BY EMPLOYEEID
-            //if (httpContextAccessor.HttpContext.User.IsInRole("Employee") || httpContextAccessor.HttpContext.User.IsInRole("Admin"))
-            //{
-            //    role = "employee";
-            //}
-
             using var client = new RestClient(ServerUrl.AppointmentUrl + $"/{role}/{id}");
             var request = new RestRequest("", Method.Get);
 
