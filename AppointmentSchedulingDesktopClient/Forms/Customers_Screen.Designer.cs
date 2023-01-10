@@ -40,7 +40,6 @@
             this.Delete_Customer_Button = new System.Windows.Forms.Button();
             this.Approve_Customer_Button = new System.Windows.Forms.Button();
             this.accountDAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CustomerBox = new System.Windows.Forms.ListBox();
             this.Page_Strip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accountDAOBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -158,7 +157,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 519);
-            this.Controls.Add(this.CustomerBox);
             this.Controls.Add(this.Update_Customer_Button);
             this.Controls.Add(this.Delete_Customer_Button);
             this.Controls.Add(this.Approve_Customer_Button);
@@ -186,6 +184,5 @@
         private Button Delete_Customer_Button;
         private Button Approve_Customer_Button;
         private BindingSource accountDAOBindingSource;
-        private ListBox CustomerBox;
     }
 }
